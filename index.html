@@ -9,8 +9,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
 
+    <!-- MAIN -->
+    <main>
+        <div class="main-wrapper">
+
+            <!-- Title -->
+            <h1 class="title text-center">Calcola il prezzo del tuo biglietto</h1>
+
+            <!-- Calculator Box -->
+            <div class="calc-box flex-column">
+                <div class="form-container">
+
+                    <!-- Form -->
+                    <div class="form flex-row">
+
+                        <!-- Nome e Cognome -->
+                        <div class="nome">
+                            <label class="text-center" for="nome-cognome">Nome e Cognome</label>
+                            <input type="text" name="name" id="nome-cognome">
+                        </div>
+                        
+
+                        <!-- Km da percorrere -->
+                        <div class="distanza">
+                            <label class="text-center" for="km-da-percorrere">Km da percorrere</label>
+                            <input type="number" name="km" id="km-percorrere">
+                        </div>
+                        
+                        <!-- Fascia d'età -->
+                        <div class="eta">
+                            <label class="text-center" for="fascia-eta">Fascia d'età</label>
+                            <select id="fascia-eta">
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over">Over 65</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button>Genera</button>
+                    <button>Annulla</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    
+    
+    <!-- JAVASCRIPT LINK -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

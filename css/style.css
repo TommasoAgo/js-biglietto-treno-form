@@ -4,3 +4,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+body {
+    background-color: #b91450;
+    font-family: sans-serif;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+/* Calculator Box */
+.calc-box {
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    color: #b91450;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* Form */
+.form {
+    padding: 30px 0;
+}
+
+.eta,
+.distanza,
+.nome {
+    padding: 0 20px;
+}
+
+.eta label,
+.distanza label,
+.nome label {  
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+input,
+select {
+    border: 1px solid #b91450;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 190px;
+}
+
+/* Buttons */
+.buttons {
+    padding: 30px 0;
+}
+
+.buttons>button {
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #b91450;
+}
