@@ -49,7 +49,22 @@ generateButton.addEventListener('click', function() {
 
     // Prezzo Biglietto
     document.getElementById('final-price').innerHTML = prezzoBiglietto;
+
+    // Devo far si che la classe "hidden" diventi classe "block" della sezione "il tuo biglietto"
+    var bloccoBiglietto = document.getElementById('biglietto');
+    bloccoBiglietto.classList.remove('hidden');
 })
+
+// Devo creare una variabile che si colleghi al bottone "Annulla"
+var cancelButton = document.getElementById('cancel-button');
+
+// Creo l'evento
+cancelButton.addEventListener('click', function() {
+    var bloccoBiglietto = document.getElementById('biglietto');
+    bloccoBiglietto.classList.remove('block');
+    bloccoBiglietto.classList.add('hidden');
+})
+
 
 
 

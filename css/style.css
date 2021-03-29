@@ -41,6 +41,14 @@ body {
     font-size: 30px;
 }
 
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 /* Calculator Box */
 .calc-box {
     background-color: white;
