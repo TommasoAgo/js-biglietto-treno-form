@@ -15,7 +15,7 @@
         <div class="main-wrapper">
 
             <!-- Title -->
-            <h1 class="title text-center">Calcola il prezzo del tuo biglietto</h1>
+            <h2 class="title text-center">Calcola il prezzo del tuo biglietto</h2>
 
             <!-- Calculator Box -->
             <div class="calc-box flex-column">
@@ -27,14 +27,14 @@
                         <!-- Nome e Cognome -->
                         <div class="nome">
                             <label class="text-center" for="nome-cognome">Nome e Cognome</label>
-                            <input type="text" name="name" id="nome-cognome">
+                            <input type="text" name="name" id="nome-cognome" placeholder="Inserisci il tuo nome">
                         </div>
                         
 
                         <!-- Km da percorrere -->
                         <div class="distanza">
                             <label class="text-center" for="km-da-percorrere">Km da percorrere</label>
-                            <input type="number" name="km" id="km-percorrere">
+                            <input type="number" name="km" id="km-percorrere" placeholder="Inserisci i km">
                         </div>
                         
                         <!-- Fascia d'età -->
@@ -52,10 +52,43 @@
 
                 <!-- Buttons -->
                 <div class="buttons">
-                    <button>Genera</button>
-                    <button>Annulla</button>
+                    <button id="generate-button">Genera</button>
+                    <button id="cancel-button">Annulla</button>
                 </div>
 
+            </div>
+
+            <!-- Il tuo Biglietto Box -->
+
+            <!-- Title -->
+            <h2 class="title text-center">Il tuo Biglietto</h2>
+
+            <div class="il-tuo-biglietto">
+                <h2 class="user-details-title">Dettaglio passeggeri</h2>
+
+                <!-- Dettagli -->
+                <div class="user-details flex-row">
+                    <div class="detail passeggero">
+                        <h3 class="uppercase">Nome <br> passeggero</h3>
+                        <h4 id="nome-utente"></h4>
+                    </div>
+                    <div class="detail">
+                        <h3>Offerta</h3>
+                        <h5 id="offer"></h5>
+                    </div>
+                    <div class="detail">
+                        <h3>Carrozza</h3>
+                        <h5 id="carrozza"></h5>
+                    </div>
+                    <div class="detail">
+                        <h3>Codice CP</h3>
+                        <h5 id="cp-code"></h5>
+                    </div>
+                    <div class="detail">
+                        <h3>Costo <br> Biglietto</h3>
+                        <h5 id="final-price"></h5>
+                    </div>
+                </div>
             </div>
         </div>
 
