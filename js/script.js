@@ -63,6 +63,10 @@ cancelButton.addEventListener('click', function() {
     var bloccoBiglietto = document.getElementById('biglietto');
     bloccoBiglietto.classList.remove('block');
     bloccoBiglietto.classList.add('hidden');
+
+    // Svuotiamo gli input
+    document.getElementById('nome-cognome').value = '';
+    document.getElementById('km-percorrere').value = '';
 })
 
 
