@@ -48,7 +48,7 @@ generateButton.addEventListener('click', function() {
     document.getElementById('cp-code').innerHTML = cpCode;
 
     // Prezzo Biglietto
-    document.getElementById('final-price').innerHTML = prezzoBiglietto;
+    document.getElementById('final-price').innerHTML = prezzoBiglietto.toFixed(2) + ' €';
 
     // Devo far si che la classe "hidden" diventi classe "block" della sezione "il tuo biglietto"
     var bloccoBiglietto = document.getElementById('biglietto');
